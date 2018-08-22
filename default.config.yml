@@ -14,24 +14,47 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - awscli
+  - aws-shell
+  - fish
   - git
   - go
   - nmap
   - tmux
+  - terraform
 
 homebrew_taps:
+  - buo/cask-upgrade
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - docker
   - google-chrome
+  - google-cloud-sdk
+  - insomnia
+  - iterm2
   - slack
+  - the-unarchiver
+  - vagrant
+  - virtualbox
+  - virtualbox-extension-pack
   - visual-studio-code
+  - vmware-remote-console
+  - homebrew/cask-fonts/font-fira-mono-for-powerline
+  - homebrew/cask-fonts/font-inconsolata-for-powerline
+  - homebrew/cask-fonts/font-noto-mono-for-powerline
+
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
+mas_installed_apps:
+  - { id: 1295203466, name: "Microsoft Remote Desktop 10" }
+  - { id: 405399194, name: "Kindle" }
+  - { id: 784801555, name: "Microsoft OneNote" }
+
+mas_email: "mlindner@gaba.co.jp"
 mas_password: ""
 
 osx_script: "~/.osx --no-restart"
