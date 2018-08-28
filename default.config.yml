@@ -4,7 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: yes
 configure_sudoers: no
 configure_terminal: no
-configure_osx: no
+configure_osx: yes
 
 dotfiles_repo: https://github.com/martinlindner/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -12,6 +12,7 @@ dotfiles_repo_local_destination: ~/Development/github.com/martinlindner/dotfiles
 dotfiles_files:
   - .gitconfig
   - .gitignore
+  - .osx
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -21,8 +22,10 @@ homebrew_installed_packages:
   - git
   - go
   - nmap
+  - python
   - tmux
   - terraform
+  - vim
 
 homebrew_taps:
   - buo/cask-upgrade
@@ -40,6 +43,7 @@ homebrew_cask_apps:
   - homebrew/cask-fonts/font-meslo-nerd-font
   - insomnia
   - iterm2
+  - powershell
   - slack
   - sql-operations-studio
   - sqlelectron
