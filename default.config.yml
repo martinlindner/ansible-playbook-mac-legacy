@@ -18,7 +18,10 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - awscli
   - aws-shell
+  - calc
   - fish
+  - fisherman
+  - geoip
   - git
   - go
   - nmap
@@ -28,25 +31,34 @@ homebrew_installed_packages:
   - vim
 
 homebrew_taps:
+  - beeftornado/rmtree
   - buo/cask-upgrade
+  - fisherman/tap
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 0xed
+  - appcleaner
   - docker
   - drawio
+  - gitkraken
   - google-chrome
   - google-cloud-sdk
   - homebrew/cask-fonts/font-firacode-nerd-font
   - homebrew/cask-fonts/font-meslo-nerd-font
   - insomnia
   - iterm2
+  - kextviewr
+  - knockknock
+  - minikube
   - powershell
   - slack
   - sql-operations-studio
   - sqlelectron
+  - taskexplorer
   - the-unarchiver
   - vagrant
   - virtualbox
@@ -56,6 +68,7 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
+  - { id: 1243219105, name: "F5Access" }
   - { id: 1295203466, name: "Microsoft Remote Desktop 10" }
   - { id: 405399194, name: "Kindle" }
   - { id: 784801555, name: "Microsoft OneNote" }
